@@ -11,23 +11,23 @@ namespace IterationStatementsExercise2._0
            
             static void Main(string[] args)
             {
-            //    for (int i = 1; i < 15; i++)
-            //    {
-            //        Console.WriteLine(i);
-            //    }
+            for (int i = 1; i < 15; i++)
+            {
+                Console.WriteLine(i);
+            }
 
-         ;
+         
 
-            //    PrintRangeHighToLow(60, 20);
-            //NumbersByThree();
+            PrintRangeHighToLow(60, 20);
+            NumbersByThree();
 
-            //Console.WriteLine(AreNumbersEqual(7, 7));
+            Console.WriteLine(AreNumbersEqual(7, 7));
 
 
-            //Console.WriteLine(Even(7));
-            IsNumberEven();
+            Console.WriteLine(Even(7));
+            IsNumberPositive();
             LegalVotingAge();
-        
+
         }
 
         public static void PrintRangeHighToLow(double ceiling, double floor)
@@ -77,9 +77,9 @@ namespace IterationStatementsExercise2._0
 
         }
     
-       public static void IsNumberEven()
+       public static void IsNumberPositive()
         {
-            Console.WriteLine("Give me a number and i will tell you if its odd or even");
+            Console.WriteLine("Give me a number and I will tell you if its odd or even");
             var number = int.Parse(Console.ReadLine());
 
             if(number >=0)
@@ -98,7 +98,7 @@ namespace IterationStatementsExercise2._0
             bool legalVote;
             do
             {
-                Console.WriteLine("Welcome to our voting age webiste, you must be over 18 to enter, please give me your age");
+                Console.WriteLine("Welcome to our voting age webiste, you must be over 18 to enter, please give me your age.");
                 
                 var userAge=int.Parse(Console.ReadLine());
 
